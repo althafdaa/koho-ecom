@@ -1,0 +1,34 @@
+.button-nav {
+  border: none;
+  background: none;
+  padding: 0.25rem 1.5rem;
+  border-radius: 25px;
+}
+
+.button-nav:hover {
+  background: #df362d;
+}
+
+.button-nav:active {
+  transform: scale(0.95);
+}
+
+.icons-nav {
+  color: white;
+  margin-top: -0.4rem;
+  width: 24px;
+  height: 24px;
+}
+
+.icons-nav:hover {
+  color: #b7ac44;
+}
+
+.badge-nav {
+  font-weight: 400;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 100%;
+
+  font-weight: bold;
+}

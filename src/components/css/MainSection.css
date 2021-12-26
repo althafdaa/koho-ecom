@@ -1,0 +1,36 @@
+#main {
+  height: 100vh;
+  background: #ff4500;
+  font-family: "Montserrat";
+}
+
+#main h1 {
+  font-size: 10rem;
+}
+
+#main h2 {
+  font-size: 1.8rem;
+}
+
+.icons-link__main {
+  color: white;
+  height: 64px;
+  width: 64px;
+}
+
+.icons-link__main:hover {
+  color: #b7ac44;
+}
+
+.next-section h5 {
+  margin-bottom: -0.2rem;
+}
+
+.icons-link__down {
+  width: 100px;
+  height: 32px;
+}
+
+.next-section a:hover {
+  color: #b7ac44;
+}

@@ -1,0 +1,45 @@
+.form-items {
+  display: flex;
+}
+
+.form-items button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #ff4500;
+  border: 1px solid #ff4500;
+  color: white;
+  padding: 0.25rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transform: translateY(-5px);
+}
+
+.form-items button:hover,
+.form-items button:active {
+  background: #df362d;
+  border: 1px solid #df362d;
+}
+
+.form-items button:active {
+  transform: scale(0.98);
+}
+
+.form-items input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem;
+}
+
+.form-items input {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.form-items input {
+  width: 3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  padding-left: 0.5rem;
+}
