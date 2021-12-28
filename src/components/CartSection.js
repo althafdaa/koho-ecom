@@ -2,15 +2,21 @@ import React, { useContext } from "react";
 import "./css/CartSection.css";
 import ModalCart from "./ModalCart";
 import CartContext from "../store/CartContext";
+import CartCheckout from "./CartCheckout";
 
 const CartSection = (props) => {
   const cartCtx = useContext(CartContext);
   const totalAmount = `Rp${cartCtx.totalAmount}.000`;
   const hasItems = cartCtx.items.length > 0;
 
-  const cartItemRemoveHandler = (id) => {};
+  const cartItemRemoveHandler = (id) => {
+    cartCtx.removeItem(id);
+  };
 
-  const cartItemAddHandler = (item) => {};
+  const cartItemAddHandler = (item) => {
+    const cartItem = { ...item, amount: 1 };
+    cartCtx.addItem(cartItem);
+  };
 
   const debugHandler = (e) => {
     e.preventDefault();
@@ -22,7 +28,7 @@ const CartSection = (props) => {
       <h4>{item.name}</h4>
       <div className='d-flex justify-content-between'>
         <div className='me-4 mt-2'>
-          <span className='price me-5'>Rp{item.price}</span>
+          <span className='price me-5'>Rp{item.price}.000</span>
           <span className='amount'>x{item.amount}</span>
         </div>
         <div className='cart-items__actions'>
@@ -43,7 +49,7 @@ const CartSection = (props) => {
           onClick={props.onClose}
         ></button>
       </div>
-      <div className='modal-body'>
+      <div className='modal-body cart-items__body'>
         {hasItems && <ul className='list-unstyled cart-items'>{cartItems}</ul>}
         {!hasItems && (
           <h2 className='text-center top-50'>
@@ -58,6 +64,7 @@ const CartSection = (props) => {
           <span>{totalAmount}</span>
         </div>
       )}
+      <CartCheckout />
       {hasItems && (
         <button
           onClick={debugHandler}

@@ -8,7 +8,7 @@ const ShopSection = () => {
     <section id='shop'>
       <CarouselShop />
       <div className='container-fluid mt-3'>
-        <h1 className='text-center'>BEST SELLER</h1>
+        <h1 className='text-center my-5'>Our Products</h1>
         <Items />
       </div>
     </section>

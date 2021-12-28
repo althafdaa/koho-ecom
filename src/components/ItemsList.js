@@ -80,7 +80,7 @@ const ItemsList = (props) => {
             
             '
                 >
-                  Rp {props.price}
+                  Rp {props.price}.000
                 </p>
                 <ItemListForm onAddToCart={addToCartHandler} id={props.id} />
               </div>

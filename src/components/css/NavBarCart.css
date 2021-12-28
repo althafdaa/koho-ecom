@@ -20,15 +20,10 @@
   height: 24px;
 }
 
-.icons-nav:hover {
-  color: #b7ac44;
-}
-
 .badge-nav {
   font-weight: 400;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 100%;
-
   font-weight: bold;
 }

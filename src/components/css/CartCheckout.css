@@ -1,0 +1,17 @@
+.cart-items__confirm {
+  font: inherit;
+  font-weight: 700;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  background: rgb(78, 131, 0);
+  border: 1px solid rgb(78, 131, 0);
+  border-radius: 24px;
+}
+
+.cart-items__confirm:hover {
+  background: rgb(98, 161, 2);
+}
+
+.cart-items__confirm:active {
+  transform: scale(0.98);
+}

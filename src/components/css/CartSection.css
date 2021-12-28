@@ -43,3 +43,8 @@
 .cart-items__actions button:nth-child(1) {
   margin-right: 12px;
 }
+
+.cart-items__body {
+  overflow-y: auto;
+  height: 36rem;
+}

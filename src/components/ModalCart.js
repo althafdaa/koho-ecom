@@ -15,7 +15,7 @@ const Backdrop = (props) => {
 const Modal = (props) => {
   return (
     <div
-      className='modal-cart
+      className='modal-cart overflow-auto
       
       '
     >

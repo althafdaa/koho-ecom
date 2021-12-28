@@ -13,7 +13,7 @@ const NavBarCart = (props) => {
   return (
     <button className='button-nav' type='button' onClick={props.onClick}>
       <span>
-        <BsCartFill className='icons-nav' />
+        <BsCartFill className='icons-nav bump' />
       </span>
       <span className='badge-nav'>{numberOfCartItems}</span>
     </button>

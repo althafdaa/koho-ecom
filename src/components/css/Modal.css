@@ -21,6 +21,10 @@
   animation: slide-down 300ms ease-out forwards;
 }
 
+.modal-cart__content {
+  height: 36rem;
+}
+
 @media (min-width: 768px) {
   .modal-cart {
     width: 40rem;
