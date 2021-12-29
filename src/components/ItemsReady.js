@@ -31,7 +31,7 @@ const ItemsReady = () => {
   }, []);
 
   const itemsListMap = products.map((item) => (
-    <li key={item.id}>
+    <li className='col-lg-auto' key={item.id}>
       <ItemsList
         key={item.id}
         id={item.id}
@@ -47,7 +47,7 @@ const ItemsReady = () => {
   return (
     <div className='container-fluid'>
       <ul
-        className='list-unstyled d-lg-flex container-fluid
+        className='list-unstyled row justify-content-center
       '
       >
         {itemsListMap}
