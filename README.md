@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My first ReactJs project. It is a simple ecommerece website based on my friend tokopedia products. The website is built with MOBILE-FIRST.
 
-## Available Scripts
+### Features
 
-In the project directory, you can run:
+- Responsive webdesign
+- Single Page Applicatio
+- "Cart" Feature with Modal
+- Form Validation
+- Order and Confirm connected to Whatsaapp with go-to-order template for buying products
+- Products is stored in firebase
 
-### `npm start`
+### Screenshot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![](./docs/s1.png)
+![](./docs/s2.png)
+![](./docs/s3.png)
+![](./docs/s4.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## My Process
 
-### `npm test`
+### Built with
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ReactJs (Component Based, State Management, React Hooks)
+- CSS3
+- Bootstrap 5
+- Firebase
 
-### `npm run build`
+### What I Learned
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Passing down props sometimes can be confusing and mess, fixed it with useContext for global state management and it runs pretty well.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The logic for adding and decreasing one product itself is kinda challenging this is what i got from my code in CartReducer.js file using useReducer dispatch action.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+if (action.type === "ADD") {
+    const newTotalAmount =
+      state.totalAmount + action.item.price * action.item.amount;
 
-### `npm run eject`
+    const existingCartItemIndex = state.items.findIndex(
+      (item) => item.id === action.item.id
+    );
+    const existingCartItem = state.items[existingCartItemIndex];
+    let updatedItem;
+    let updatedItems;
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    if (existingCartItem) {
+      updatedItem = {
+        ...existingCartItem,
+        amount: existingCartItem.amount + action.item.amount,
+      };
+      updatedItems = [...state.items];
+      updatedItems[existingCartItemIndex] = updatedItem;
+    } else {
+      updatedItem = { ...action.item };
+      updatedItems = state.items.concat(updatedItem);
+    }
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    return {
+      items: updatedItems,
+      totalAmount: newTotalAmount,
+    };
+  }
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  if (action.type === "REMOVE") {
+    let updatedItems;
+    const index = state.items.findIndex((item) => item.id === action.id);
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    if (state.items[index].amount === 1) {
+      updatedItems = state.items.filter((item) => item.id !== action.id);
+    } else {
+      updatedItems = [...state.items];
+      updatedItems[index].amount -= 1;
+    }
+    return {
+      items: updatedItems,
+      totalAmount: state.totalAmount - state.items[index].price,
+    };
+  }
+```
 
-## Learn More
+### Continued Development
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Still learning React and looking to learn more about Redux and React Router. We'll see!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Author
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-althafdaa

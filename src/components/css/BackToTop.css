@@ -1,0 +1,17 @@
+.icons-backtotop {
+  color: #ff4500;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 3rem;
+  border: none;
+}
+
+.icons-backtotop:hover {
+  color: #df362d;
+}
+
+.icons-backtotop:active {
+  transform: scale(0.96);
+}

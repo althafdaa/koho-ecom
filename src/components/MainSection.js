@@ -18,12 +18,15 @@ const MainSection = (props) => {
       <div className='icons-link my-3'>
         <ul className='list-unstyled d-flex'>
           <li className='mx-3'>
-            <a href=''>
+            <a
+              href='https://wa.me/89660606763?text=Halo%20kamu%20sedang%20menghubungi%20Althaf%20Demiandra%20pemilik%20repo%20ini,%20lets%20connect!'
+              target='__blank'
+            >
               <BsWhatsapp className='icons-link__main' />
             </a>
           </li>
           <li className='mx-3'>
-            <a href=''>
+            <a href='https://www.tokopedia.com/koho' target='__blank'>
               <BsFillBasketFill className='icons-link__main' />
             </a>
           </li>
@@ -31,7 +34,7 @@ const MainSection = (props) => {
       </div>
 
       <div className='next-section position-absolute bottom-0 text-center'>
-        <a className='text-decoration-none text-white' href=''>
+        <a className='text-decoration-none text-white' href='#products'>
           <h5>Shop now</h5>
           <BsArrowBarDown className='icons-link__down' />
         </a>
