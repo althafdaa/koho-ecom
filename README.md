@@ -25,6 +25,7 @@ My first ReactJs project. It is a simple ecommerece website based on my friend t
 - ReactJs (Component Based, State Management, React Hooks)
 - CSS3
 - Bootstrap 5
+- React Icons
 - Firebase
 
 ### What I Learned
