@@ -7,7 +7,7 @@ const NavBar = (props) => {
   return (
     <nav className='object-contain navbar navbar-expand-lg navbar-dark fixed-top navbar-app'>
       <div className='container'>
-        <a className='navbar-brand' href='#'>
+        <a className='navbar-brand' href='/' rel='noreferrer'>
           KOHO APP
         </a>
         <NavBarCart onClick={props.onClick} />

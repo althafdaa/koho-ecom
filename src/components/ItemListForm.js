@@ -1,5 +1,5 @@
-import React, { useRef, useState } from "react";
-import "./css/ItemsListForm.css";
+import React, { useRef, useState } from 'react';
+import './css/ItemsListForm.css';
 
 const ItemListForm = (props) => {
   const [enteredItemIsValid, setEnteredItemIsValid] = useState(true);
@@ -29,7 +29,6 @@ const ItemListForm = (props) => {
     <form className='form-items' onSubmit={submitHandler}>
       <input
         ref={amountInputRef}
-        type='text'
         id={props.id}
         type='number'
         min='1'

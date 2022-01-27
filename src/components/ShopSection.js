@@ -1,7 +1,6 @@
-import React from "react";
-import "./css/ShopSection.css";
-import CarouselShop from "./CarouselShop";
-import Items from "./Items";
+import React from 'react';
+import './css/ShopSection.css';
+import Items from './Items';
 
 const ShopSection = () => {
   return (
