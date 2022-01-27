@@ -1,5 +1,5 @@
-import React from "react";
-import "./css/Modal.css";
+import React from 'react';
+import './css/Modal.css';
 
 const Backdrop = (props) => {
   return (
@@ -15,8 +15,7 @@ const Backdrop = (props) => {
 const Modal = (props) => {
   return (
     <div
-      className='modal-cart overflow-auto
-      
+      className='modal-cart overflow-auto object-contain
       '
     >
       <div className='modal-cart__content d-flex flex-column'>

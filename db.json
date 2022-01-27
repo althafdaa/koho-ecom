@@ -1,0 +1,46 @@
+{
+  "products" : {
+    "m1" : {
+      "desc" : "Membantu meredakan gejala Influenza seperti demam, panas dalam, nyeri sendi, hidung tersumbat, sakit kepala, batuk, tenggorokan kering",
+      "image" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/9/11/e817b56d-aa4d-423b-ad8b-e79878d8a9a8.png\"",
+      "image2" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/9/11/7a2dc37a-9df2-474d-b4c5-22f89914b6c5.png",
+      "name" : "Lianhua Qingwen Jiaonang",
+      "price" : "58"
+    },
+    "m2" : {
+      "desc" : "Minyak gosok dari bahan herbal sangat ampuh dalam meminimalisir pegal-pegal, saat ada bentolan atau gigitan serangga.",
+      "image" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/7/31/79a65415-cba1-4166-a882-2ecf61c33c71.png",
+      "image2" : "https://images.tokopedia.net/img/cache/900/product-1/2020/6/2/8213272/8213272_589daad4-5755-4def-a29c-d29cc712282d_2048_2048.jpg",
+      "name" : "Minyak Gosok Liu Lin Pa",
+      "price" : "68"
+    },
+    "m3" : {
+      "desc" : "Water based lubricant aman digunakan dengan tanpa kondom, maupun kondom latex maupun non latex karena berbahan dasar air yang tidak menyebabkan kerusakan pada bahan yang digunakan kondom.",
+      "image" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/30/72d17ea0-3c3a-4003-af1f-155cd463df78.jpg",
+      "imge2" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/9/fcf833b1-83ca-4c0c-a924-fcb39abefe40.jpg",
+      "name" : "Monogatari Lubricant Gel",
+      "price" : "50"
+    },
+    "m4" : {
+      "desc" : "Ukuran 48 mm x 90 yard",
+      "image" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/23/06bc14d0-b716-430d-9440-e49cfcd778e5.jpg",
+      "image2" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/23/c1bc8a8b-fc62-4d5a-8e3a-b7ac96824852.jpg",
+      "name" : "Lakban Hoki Tape",
+      "price" : "9"
+    },
+    "m5" : {
+      "desc" : "Plastik Wrapping Ukuran 10 cm x 250 m",
+      "image" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2020/9/15/a6bc5e17-1df7-469a-b792-7aea35242dd0.png",
+      "image2" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/30/f7c5a650-b270-40ce-a6a8-538c5f5e36cc.jpg",
+      "name" : "Strech Film Plastik",
+      "price" : "20"
+    },
+    "m6" : {
+      "desc" : "KF94 4 ply NON Medical 1 pack (isi 10pcs)",
+      "image" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/8/28/a5b253fa-7388-43b2-8504-5e5bb0e76be7.jpg",
+      "image2" : "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/30/fd7e1e3f-5508-4057-b136-92554a5bcdec.jpg",
+      "name" : "Masker KF94 Mousen Evomed",
+      "price" : "10"
+    }
+  }
+}

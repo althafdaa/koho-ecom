@@ -1,7 +1,7 @@
-import React from "react";
-import NavBar from "./NavBar";
-import "./css/MainSection.css";
-import { BsWhatsapp, BsFillBasketFill, BsArrowBarDown } from "react-icons/bs";
+import React from 'react';
+import NavBar from './NavBar';
+import './css/MainSection.css';
+import { BsWhatsapp, BsFillBasketFill, BsArrowBarDown } from 'react-icons/bs';
 
 const MainSection = (props) => {
   return (
@@ -10,8 +10,8 @@ const MainSection = (props) => {
       id='main'
     >
       <NavBar onClick={props.onOpen} />
-      <div className='text-center'>
-        <h1>KoHo </h1>
+      <div className='text-center vw-100'>
+        <h1>KoHo</h1>
         <h2>EVERYTHING IN YOUR HAND</h2>
       </div>
 

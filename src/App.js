@@ -1,11 +1,11 @@
-import React from "react";
-import { useState } from "react";
-import MainSection from "./components/MainSection";
-import CartSection from "./components/CartSection";
-import ShopSection from "./components/ShopSection";
-import CartReducer from "./store/CartReducer";
-import Footer from "./components/Footer";
-import BackToTop from "./components/BackToTop";
+import React from 'react';
+import { useState } from 'react';
+import MainSection from './components/MainSection';
+import CartSection from './components/CartSection';
+import ShopSection from './components/ShopSection';
+import CartReducer from './store/CartReducer';
+import Footer from './components/Footer';
+import BackToTop from './components/BackToTop';
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -22,8 +22,8 @@ function App() {
     <CartReducer>
       <BackToTop />
       {cartIsShown && <CartSection onClose={hideCartHandler} />}
-      <MainSection onOpen={showCartHandler} />
-      <ShopSection />
+      <MainSection className='object-contain' onOpen={showCartHandler} />
+      <ShopSection className='object-contain' />
       <Footer />
     </CartReducer>
   );
